@@ -2,6 +2,8 @@
  * Created by Aditya on 12/1/2016.
  */
 
+require('./config/config.js');
+
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -11,7 +13,7 @@ var {Todo} = require('./models/todo');
 var {ObjectID} = require('mongodb');
 
 var app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 
