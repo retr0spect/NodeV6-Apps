@@ -100,7 +100,6 @@ app.patch('/todos/:id', (req, res) => {
     }).catch(() => {
         res.status(400).send();
     })
-
 });
 
 app.post('/users', (req, res) => {
